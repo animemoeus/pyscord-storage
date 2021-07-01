@@ -2,6 +2,7 @@ LICENSE
 README.md
 pyproject.toml
 setup.cfg
+setup.py
 src/pyscord_storage/__init__.py
 src/pyscord_storage.egg-info/PKG-INFO
 src/pyscord_storage.egg-info/SOURCES.txt

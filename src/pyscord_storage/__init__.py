@@ -12,4 +12,4 @@ def upload(filename, url):
         data={"filename": filename, "url": url},
     )
 
-    return {"status": requests.status_code, "data": json.dumps(response.text)}
+    return {"status": response.status_code, "data": json.loads(response.text)}
