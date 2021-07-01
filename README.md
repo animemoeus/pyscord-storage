@@ -15,11 +15,11 @@ pip install pyscord-storage --upgrade
 ```python
 import pyscord_storage
 
-new_filename = 'ynm.jpg'
-file_url = 'https://github.com/animemoeus/pyscord-storage/raw/master/sample.jpg'
+filename = 'ynm.jpg'
+url = 'https://github.com/animemoeus/pyscord-storage/raw/master/sample.jpg'
 
 
-data = pyscord_storage.upload(new_filename,file_url)
+data = pyscord_storage.upload(filename,url)
 ```
 
 ### Result
