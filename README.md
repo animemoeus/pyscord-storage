@@ -41,11 +41,6 @@ data = pyscord_storage.upload(new_filename,file_url)
 }
 ```
 
-### Example Implementation
-
-- https://api.animemoe.us/waifu/
-- https://waifu.animemoe.us/
-
 ### About
 
 - Max upload size limit is 8MB. [Click here for detail](https://support.discord.com/hc/en-us/community/posts/360031101592-Increase-max-file-size-for-free-accounts).
@@ -53,4 +48,7 @@ data = pyscord_storage.upload(new_filename,file_url)
 - proxy_url. [Click here for detail](https://www.reddit.com/r/discordapp/comments/f1ixly/.discord_adding_lower_width_and_height_to_linked/)
 - Attachments URL. [Click here for detail](https://support.discord.com/hc/en-us/community/posts/360061593771-Privacy-for-CDN-attachements).
 
----
+### Example Implementation
+
+- https://api.animemoe.us/waifu/
+- https://waifu.animemoe.us/
