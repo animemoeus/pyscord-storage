@@ -1,6 +1,6 @@
 # pyscord-storage
 
-Free unlimited file hosting
+Free unlimited file hosting using Discord server
 
 ---
 
