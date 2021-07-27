@@ -16,10 +16,12 @@ pip install pyscord-storage --upgrade
 import pyscord_storage
 
 filename = 'ynm.jpg'
-url = 'https://github.com/animemoeus/pyscord-storage/raw/master/sample.jpg'
+
+# file = 'path/to/your/file' -> pyscord_storage v0.0.7+
+file = 'https://github.com/animemoeus/pyscord-storage/raw/master/sample.jpg'
 
 
-data = pyscord_storage.upload(filename,url)
+data = pyscord_storage.upload(filename,file)
 ```
 
 ### Result
@@ -40,6 +42,11 @@ data = pyscord_storage.upload(filename,url)
         }
 }
 ```
+
+### API
+
+- [Upload From URL](https://discord-storage.animemoe.us/upload-from-url/)
+- [Upload From File](https://discord-storage.animemoe.us/upload-from-file/)
 
 ### About
 
