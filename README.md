@@ -55,6 +55,11 @@ data = pyscord_storage.upload(filename,file)
 - proxy_url. [Click here for detail](https://www.reddit.com/r/discordapp/comments/f1ixly/.discord_adding_lower_width_and_height_to_linked/).
 - Attachments URL. [Click here for detail](https://support.discord.com/hc/en-us/community/posts/360061593771-Privacy-for-CDN-attachements).
 
+### Increase Upload Limit
+- I don't know if this will work, but I think if the server gets a boost with Nitro, we can increase the upload limit up to 50 MB or 100MB.
+- [https://discord.com/nitro](https://discord.com/nitros)
+- Discord Server [https://discord.gg/kZuWeKzgkq](https://discord.gg/kZuWeKzgkq)
+
 ### Example Implementation
 
 - https://api.animemoe.us/waifu/
