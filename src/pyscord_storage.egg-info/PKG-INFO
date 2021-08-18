@@ -1,8 +1,8 @@
 Metadata-Version: 2.1
 Name: pyscord-storage
-Version: 0.0.7
+Version: 0.0.8
 Summary: Free unlimited file hosting using Discord server
-Home-page: https://github.com/animemoeus/pyscord-storage
+Home-page: https://discord-storage.animemoe.us
 Author: Arter Tendean
 Author-email: arter.tendean.07@gmail.com
 License: UNKNOWN
@@ -33,9 +33,8 @@ pip install pyscord-storage --upgrade
 import pyscord_storage
 
 filename = 'ynm.jpg'
-
-# file = 'path/to/your/file' -> pyscord_storage v0.0.7+
 file = 'https://github.com/animemoeus/pyscord-storage/raw/master/sample.jpg'
+# file = 'path/to/your/file' -> pyscord_storage v0.0.7+
 
 
 data = pyscord_storage.upload(filename,file)
@@ -71,6 +70,12 @@ data = pyscord_storage.upload(filename,file)
 - url vs proxy_url. [Click here for detail](https://www.reddit.com/r/discordapp/comments/e8lgj2/mediadiscordappnet_cdndiscordappcom/).
 - proxy_url. [Click here for detail](https://www.reddit.com/r/discordapp/comments/f1ixly/.discord_adding_lower_width_and_height_to_linked/).
 - Attachments URL. [Click here for detail](https://support.discord.com/hc/en-us/community/posts/360061593771-Privacy-for-CDN-attachements).
+
+### Increase Upload Limit
+
+- I don't know if this will work, but I think if the server gets a boost with Nitro, we can increase the upload limit up to 50 MB or 100MB.
+- [https://discord.com/nitro](https://discord.com/nitros)
+- Discord Server [https://discord.gg/kZuWeKzgkq](https://discord.gg/kZuWeKzgkq)
 
 ### Example Implementation
 
