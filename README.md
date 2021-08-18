@@ -16,9 +16,8 @@ pip install pyscord-storage --upgrade
 import pyscord_storage
 
 filename = 'ynm.jpg'
-
-# file = 'path/to/your/file' -> pyscord_storage v0.0.7+
 file = 'https://github.com/animemoeus/pyscord-storage/raw/master/sample.jpg'
+# file = 'path/to/your/file' -> pyscord_storage v0.0.7+
 
 
 data = pyscord_storage.upload(filename,file)
@@ -56,6 +55,7 @@ data = pyscord_storage.upload(filename,file)
 - Attachments URL. [Click here for detail](https://support.discord.com/hc/en-us/community/posts/360061593771-Privacy-for-CDN-attachements).
 
 ### Increase Upload Limit
+
 - I don't know if this will work, but I think if the server gets a boost with Nitro, we can increase the upload limit up to 50 MB or 100MB.
 - [https://discord.com/nitro](https://discord.com/nitros)
 - Discord Server [https://discord.gg/kZuWeKzgkq](https://discord.gg/kZuWeKzgkq)
