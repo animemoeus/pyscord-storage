@@ -1,5 +1,5 @@
 ﻿appdirs==1.4.4
-black==21.8b0
+black==21.9b0
 bleach==4.1.0
 build==0.6.0.post1
 certifi==2021.5.30
