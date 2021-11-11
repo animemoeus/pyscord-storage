@@ -1,0 +1,15 @@
+var request = http.MultipartRequest('POST', Uri.parse('https://discord-storage.animemoe.us/upload-from-url/'));
+request.fields.addAll({
+  'filename': 'sample.jpg',
+  'url': 'https://github.com/animemoeus/pyscord-storage/raw/master/sample.jpg'
+});
+
+
+http.StreamedResponse response = await request.send();
+
+if (response.statusCode == 200) {
+  print(await response.stream.bytesToString());
+}
+else {
+  print(response.reasonPhrase);
+}

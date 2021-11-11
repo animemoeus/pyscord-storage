@@ -1,0 +1,8 @@
+var unirest = require('unirest');
+var req = unirest('POST', 'https://discord-storage.animemoe.us/upload-from-url/')
+  .field('filename', 'sample.jpg')
+  .field('url', 'https://github.com/animemoeus/pyscord-storage/raw/master/sample.jpg')
+  .end(function (res) { 
+    if (res.error) throw new Error(res.error); 
+    console.log(res.raw_body);
+  });
