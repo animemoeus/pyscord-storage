@@ -1,5 +1,5 @@
 ﻿appdirs==1.4.4
-black==21.9b0
+black==21.11b1
 bleach==4.1.0
 build==0.6.0.post1
 certifi==2021.5.30
@@ -7,7 +7,7 @@ chardet==4.0.0
 click==8.0.1
 colorama==0.4.4
 docutils==0.17.1
-idna==2.10
+idna==3.3
 importlib-metadata==4.7.1
 keyring==23.1.0
 mypy-extensions==0.4.3
