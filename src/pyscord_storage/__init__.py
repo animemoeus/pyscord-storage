@@ -6,7 +6,7 @@ def upload(filename="", file="", custom_headers={}):
 
     headers = {
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36",
-        "Referer": "pyscord-storage 0.1.1",
+        "Referer": "pyscord-storage 0.1.3",
     }
 
     # upload file from URL
