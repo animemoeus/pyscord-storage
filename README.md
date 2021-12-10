@@ -18,8 +18,8 @@ pip install pyscord-storage --upgrade
 import pyscord_storage
 
 
-filename = 'ynm.jpg'
-file = 'https://github.com/animemoeus/pyscord-storage/raw/master/sample.jpg'
+filename = "ynm.jpg"
+file = "https://raw.githubusercontent.com/animemoeus/pyscord-storage/master/sample.jpg"
 # file = 'path/to/your/file'
 
 data = pyscord_storage.upload(filename, file)
@@ -36,8 +36,8 @@ custom_headers = {
         "Custom-Header": "Lorem Ipsum Dolor Sit Amet",
     }
 
-filename = 'ynm.jpg'
-file = 'https://github.com/animemoeus/pyscord-storage/raw/master/sample.jpg'
+filename = "ynm.jpg"
+file = "https://raw.githubusercontent.com/animemoeus/pyscord-storage/master/sample.jpg"
 # file = 'path/to/your/file'
 
 data = pyscord_storage.upload(filename, file, custom_headers)
