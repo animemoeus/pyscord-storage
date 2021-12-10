@@ -22,7 +22,7 @@ filename = 'ynm.jpg'
 file = 'https://github.com/animemoeus/pyscord-storage/raw/master/sample.jpg'
 # file = 'path/to/your/file'
 
-data = pyscord_storage.upload(filename,file)
+data = pyscord_storage.upload(filename, file)
 ```
 
 ###### If you need to use custom http headers for get the file from URL, you can use the custom http headers like this:
@@ -40,7 +40,7 @@ filename = 'ynm.jpg'
 file = 'https://github.com/animemoeus/pyscord-storage/raw/master/sample.jpg'
 # file = 'path/to/your/file'
 
-data = pyscord_storage.upload(filename,file)
+data = pyscord_storage.upload(filename, file, custom_headers)
 ```
 
 Note: Try to change the `User-Agent` header if you get blocked by firewall rules when using the `custom_headers`.
