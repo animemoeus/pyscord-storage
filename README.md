@@ -12,33 +12,54 @@ pip install pyscord-storage --upgrade
 
 ### Example
 
+###### Default
+
 ```python
 import pyscord_storage
 
+
 filename = 'ynm.jpg'
 file = 'https://github.com/animemoeus/pyscord-storage/raw/master/sample.jpg'
-# file = 'path/to/your/file' -> pyscord_storage v0.0.7+
-
+# file = 'path/to/your/file'
 
 data = pyscord_storage.upload(filename,file)
 ```
 
+###### If you need to use custom http headers for get the file from URL, you can use the custom http headers like this:
+
+```python
+import pyscord_storage
+
+custom_headers = {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36",
+        "Referer": "pyscord-storage",
+        "Custom-Header": "Lorem Ipsum Dolor Sit Amet",
+    }
+
+filename = 'ynm.jpg'
+file = 'https://github.com/animemoeus/pyscord-storage/raw/master/sample.jpg'
+# file = 'path/to/your/file'
+
+data = pyscord_storage.upload(filename,file)
+```
+
+Note: Try to change the `User-Agent` header if you get blocked by firewall rules when using the `custom_headers`.
+
 ### Result
 
-```
+```json
 {
-    'status': 200,
-    'data':
-        {
-            'id': '860049950065819658',
-            'filename': 'ynm.jpg',
-            'size': 130407,
-            'url': 'https://cdn.discordapp.com/attachments/858938620425404426/860049950065819658/ynm.jpg',
-            'proxy_url': 'https://media.discordapp.net/attachments/858938620425404426/860049950065819658/ynm.jpg',
-            'width': 537,
-            'height': 954,
-            'content_type': 'image/jpeg'
-        }
+  "status": 200,
+  "data": {
+    "id": "860049950065819658",
+    "filename": "ynm.jpg",
+    "size": 130407,
+    "url": "https://cdn.discordapp.com/attachments/858938620425404426/860049950065819658/ynm.jpg",
+    "proxy_url": "https://media.discordapp.net/attachments/858938620425404426/860049950065819658/ynm.jpg",
+    "width": 537,
+    "height": 954,
+    "content_type": "image/jpeg"
+  }
 }
 ```
 
