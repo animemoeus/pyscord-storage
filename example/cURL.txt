@@ -1,3 +1,0 @@
-curl --location --request POST 'https://discord-storage.animemoe.us/upload-from-url/' \
---form 'filename="sample.jpg"' \
---form 'url="https://github.com/animemoeus/pyscord-storage/raw/master/sample.jpg"'

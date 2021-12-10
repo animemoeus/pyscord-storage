@@ -1,6 +1,0 @@
-Unirest.setTimeouts(0, 0);
-HttpResponse<String> response = Unirest.post("https://discord-storage.animemoe.us/upload-from-url/")
-  .multiPartContent()
-  .field("filename", "sample.jpg")
-  .field("url", "https://github.com/animemoeus/pyscord-storage/raw/master/sample.jpg")
-  .asString();
