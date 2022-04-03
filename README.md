@@ -85,3 +85,4 @@ Note: Try to change the `User-Agent` header if you get blocked by firewall rules
 
 - https://api.animemoe.us/waifu/
 - https://waifu.animemoe.us/
+- https://github.com/animemoeus/tiktod
