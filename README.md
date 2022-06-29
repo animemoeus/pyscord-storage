@@ -12,6 +12,8 @@ pip install pyscord-storage --upgrade
 
 ## Example
 
+## Code
+
 ```python
 import pyscord_storage
 
