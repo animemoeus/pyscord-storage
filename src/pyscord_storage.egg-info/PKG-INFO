@@ -1,17 +1,35 @@
 Metadata-Version: 2.1
 Name: pyscord-storage
-Version: 0.1.3
+Version: 1.0.0
 Summary: Free unlimited file hosting using Discord server
-Home-page: https://discord-storage.animemoe.us
-Author: Arter Tendean
-Author-email: arter.tendean.07@gmail.com
-License: UNKNOWN
+Author-email: Arter Tendean <arter@animemoe.us>
+License: MIT License
+        
+        Copyright (c) 2021 Arter Tendean
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+Project-URL: Homepage, https://discord-storage.animemoe.us
 Project-URL: Source, https://github.com/animemoeus/pyscord-storage
-Platform: UNKNOWN
 Classifier: Programming Language :: Python :: 3
 Classifier: License :: OSI Approved :: MIT License
 Classifier: Operating System :: OS Independent
-Requires-Python: >=3.6
+Requires-Python: >=3.7
 Description-Content-Type: text/markdown
 License-File: LICENSE
 
@@ -102,5 +120,4 @@ Note: Try to change the `User-Agent` header if you get blocked by firewall rules
 
 - https://api.animemoe.us/waifu/
 - https://waifu.animemoe.us/
-
-
+- https://github.com/animemoeus/tiktod
