@@ -4,46 +4,23 @@ Free unlimited file hosting using Discord server
 
 ---
 
-### Installation
+## Installation
 
-```
+```bash
 pip install pyscord-storage --upgrade
 ```
 
-### Example
-
-###### Default
+## Example
 
 ```python
 import pyscord_storage
 
-
-filename = "ynm.jpg"
-file = "https://raw.githubusercontent.com/animemoeus/pyscord-storage/master/sample.jpg"
-# file = 'path/to/your/file'
+filename = "example.jpg"
+file = "https://cdn.discordapp.com/attachments/858938620425404426/980409229393395722/waifu-animemoeus.jpg"
+# file = '/path/to/your/file'
 
 data = pyscord_storage.upload(filename, file)
 ```
-
-###### If you need to use custom http headers for get the file from URL, you can use the custom http headers like this:
-
-```python
-import pyscord_storage
-
-custom_headers = {
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36",
-        "Referer": "pyscord-storage",
-        "Custom-Header": "Lorem Ipsum Dolor Sit Amet",
-    }
-
-filename = "ynm.jpg"
-file = "https://raw.githubusercontent.com/animemoeus/pyscord-storage/master/sample.jpg"
-# file = 'path/to/your/file'
-
-data = pyscord_storage.upload(filename, file, custom_headers)
-```
-
-Note: Try to change the `User-Agent` header if you get blocked by firewall rules when using the `custom_headers`.
 
 ### Result
 
@@ -83,6 +60,5 @@ Note: Try to change the `User-Agent` header if you get blocked by firewall rules
 
 ### Example Implementation
 
-- https://api.animemoe.us/waifu/
-- https://waifu.animemoe.us/
-- https://github.com/animemoeus/tiktod
+- <https://api.animemoe.us/waifu/>
+- <https://waifu.animemoe.us/>
