@@ -26,7 +26,7 @@ keyring==23.7.0
 mypy-extensions==0.4.3
 packaging==21.3
 pathspec==0.9.0
-pep517==0.12.0
+pep517==0.13.0
 pkginfo==1.8.3
 platformdirs==2.5.2
 Pygments==2.12.0
@@ -59,7 +59,7 @@ keyring==23.7.0
 mypy-extensions==0.4.3
 packaging==21.3
 pathspec==0.9.0
-pep517==0.12.0
+pep517==0.13.0
 pkginfo==1.8.3
 platformdirs==2.5.2
 Pygments==2.12.0
