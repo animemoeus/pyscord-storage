@@ -22,7 +22,7 @@ commonmark==0.9.1
 docutils==0.19
 idna==3.3
 importlib-metadata==4.12.0
-keyring==23.7.0
+keyring==23.8.2
 mypy-extensions==0.4.3
 packaging==21.3
 pathspec==0.9.0
@@ -55,7 +55,7 @@ commonmark==0.9.1
 docutils==0.19
 idna==3.3
 importlib-metadata==4.12.0
-keyring==23.7.0
+keyring==23.8.2
 mypy-extensions==0.4.3
 packaging==21.3
 pathspec==0.9.0
