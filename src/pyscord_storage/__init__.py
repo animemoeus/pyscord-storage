@@ -53,12 +53,10 @@ async def async_upload(filename="", file=""):
         }
         async with aiohttp.ClientSession() as session:
             async with session.post(url,headers=headers,data=payload) as response:
-
         return {"status": response.status, "data": orjson.loads(await response.text())}
 
     else:
         # upload from file
         async with aiohttp.ClientSession() as session:
             async with session.post("https://discord-storage.animemoe.us/upload-from-file/",headers=headers,data={"filename": filename},files={"file": open(file, "rb")},)
-
-        return {"status": response.status, "data": orjson.loads(await response.text())}
+                return {"status": response.status, "data": orjson.loads(await response.text())}
