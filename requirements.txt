@@ -39,7 +39,7 @@ rfc3986==2.0.0
 rich==12.6.0
 six==1.16.0
 tomli==2.0.1
-twine==4.0.1
+twine==4.0.2
 typing-extensions==4.4.0
 urllib3==1.26.13
 webencodings==0.5.1
@@ -72,7 +72,7 @@ rfc3986==2.0.0
 rich==12.6.0
 six==1.16.0
 tomli==2.0.1
-twine==4.0.1
+twine==4.0.2
 typing-extensions==4.4.0
 urllib3==1.26.13
 webencodings==0.5.1
