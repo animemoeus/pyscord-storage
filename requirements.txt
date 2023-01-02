@@ -29,7 +29,7 @@ pathspec==0.10.3
 pep517==0.13.0
 pkginfo==1.9.2
 platformdirs==2.6.2
-Pygments==2.13.0
+Pygments==2.14.0
 pyparsing==3.0.9
 pywin32-ctypes==0.2.0
 readme-renderer==37.3
@@ -62,7 +62,7 @@ pathspec==0.10.3
 pep517==0.13.0
 pkginfo==1.9.2
 platformdirs==2.6.2
-Pygments==2.13.0
+Pygments==2.14.0
 pyparsing==3.0.9
 pywin32-ctypes==0.2.0
 readme-renderer==37.3
