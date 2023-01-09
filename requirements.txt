@@ -27,7 +27,7 @@ mypy-extensions==0.4.3
 packaging==22.0
 pathspec==0.10.3
 pep517==0.13.0
-pkginfo==1.9.4
+pkginfo==1.9.6
 platformdirs==2.6.2
 Pygments==2.14.0
 pyparsing==3.0.9
@@ -60,7 +60,7 @@ mypy-extensions==0.4.3
 packaging==22.0
 pathspec==0.10.3
 pep517==0.13.0
-pkginfo==1.9.4
+pkginfo==1.9.6
 platformdirs==2.6.2
 Pygments==2.14.0
 pyparsing==3.0.9
