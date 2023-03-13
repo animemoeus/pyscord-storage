@@ -10,7 +10,7 @@ platformdirs==3.1.1
 requests==2.28.2
 tomli==2.0.1
 typing-extensions==4.5.0
-urllib3==1.26.14
+urllib3==1.26.15
 black==23.1.0
 bleach==6.0.0
 build==0.10.0
@@ -41,7 +41,7 @@ six==1.16.0
 tomli==2.0.1
 twine==4.0.2
 typing-extensions==4.5.0
-urllib3==1.26.14
+urllib3==1.26.15
 webencodings==0.5.1
 zipp==3.15.0
 black==23.1.0
@@ -74,6 +74,6 @@ six==1.16.0
 tomli==2.0.1
 twine==4.0.2
 typing-extensions==4.5.0
-urllib3==1.26.14
+urllib3==1.26.15
 webencodings==0.5.1
 zipp==3.15.0
