@@ -21,7 +21,7 @@ colorama==0.4.6
 commonmark==0.9.1
 docutils==0.19
 idna==3.4
-importlib-metadata==6.0.0
+importlib-metadata==6.1.0
 keyring==23.13.1
 mypy-extensions==1.0.0
 packaging==23.0
@@ -54,7 +54,7 @@ colorama==0.4.6
 commonmark==0.9.1
 docutils==0.19
 idna==3.4
-importlib-metadata==6.0.0
+importlib-metadata==6.1.0
 keyring==23.13.1
 mypy-extensions==1.0.0
 packaging==23.0
