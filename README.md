@@ -44,8 +44,8 @@ data = pyscord_storage.upload(filename, file)
 
 ### API
 
-- [Upload From URL](https://discord-storage.animemoe.us/upload-from-url/)
-- [Upload From File](https://discord-storage.animemoe.us/upload-from-file/)
+- [Upload From URL](https://discord-storage.animemoe.us/api/upload-from-url/)
+- [Upload From File](https://discord-storage.animemoe.us/api/upload-from-file/)
 
 ### About
 
