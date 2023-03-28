@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "pyscord-storage"
-version = "2.0.2"
+version = "2.0.3"
 description = "Free unlimited file hosting using the Discord server"
 license = "MIT"
 authors = ["Arter Tendean <arter.tendean.07@gmail.com>"]
