@@ -1,9 +1,0 @@
-LICENSE
-README.md
-pyproject.toml
-src/test.py
-src/pyscord_storage/__init__.py
-src/pyscord_storage.egg-info/PKG-INFO
-src/pyscord_storage.egg-info/SOURCES.txt
-src/pyscord_storage.egg-info/dependency_links.txt
-src/pyscord_storage.egg-info/top_level.txt

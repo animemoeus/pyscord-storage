@@ -1,23 +1,20 @@
-[project]
+[tool.poetry]
 name = "pyscord-storage"
-version = "1.0.0"
-authors = [
-  { name="Arter Tendean", email="arter@animemoe.us" },
-]
-description = "Free unlimited file hosting using Discord server"
+version = "2.0.2"
+description = "Free unlimited file hosting using the Discord server"
+license = "MIT"
+authors = ["Arter Tendean <arter.tendean.07@gmail.com>"]
 readme = "README.md"
-license = { file="LICENSE" }
-requires-python = ">=3.7"
-classifiers = [
-    "Programming Language :: Python :: 3",
-    "License :: OSI Approved :: MIT License",
-    "Operating System :: OS Independent",
-]
+homepage = "https://discord-storage.animemoe.us/"
+repository = "https://github.com/animemoeus/pyscord-storage"
+keywords = ["discord", "unlimited", "storage", "django"]
+packages = [{include = "pyscord_storage"}]
 
-[project.urls]
-"Homepage" = "https://discord-storage.animemoe.us"
-"Source" = "https://github.com/animemoeus/pyscord-storage"
+[tool.poetry.dependencies]
+python = "^3.8"
+requests = "^2.28.2"
+
 
 [build-system]
-requires = ["setuptools>=61.0"]
-build-backend = "setuptools.build_meta"
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
