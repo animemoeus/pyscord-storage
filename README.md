@@ -1,6 +1,6 @@
-# pyscord-storage
+# pyscord-storage | ![Uptime Robot status](https://img.shields.io/uptimerobot/status/m788953682-d9a508d14b27c021c836b4aa?style=flat-square) ![Uptime Robot ratio (30 days)](https://img.shields.io/uptimerobot/ratio/m788953682-d9a508d14b27c021c836b4aa?style=flat-square)
 
-Free unlimited file hosting using Discord server
+Free unlimited file hosting 😁👍
 
 ---
 
@@ -24,7 +24,7 @@ print(result)
 ```python
 import pyscord_storage
 
-result = pyscord_storage.upload_from_url("waifu.jpg','https://github.com/animemoeus/pyscord-storage/raw/master/tests/temp/takagi.png")
+result = pyscord_storage.upload_from_url("waifu.jpg","https://github.com/animemoeus/pyscord-storage/raw/master/tests/temp/takagi.png")
 
 print(result)
 ```
@@ -33,8 +33,7 @@ print(result)
 
 ## About
 
-- [Server Status](https://stats.uptimerobot.com/GKy6liBGw7/788953682)
-- Max upload size limit is 8MB. [Click here for detail](https://support.discord.com/hc/en-us/community/posts/360031101592-Increase-max-file-size-for-free-accounts).
+- Max upload file size limit is ~~[8MB](https://support.discord.com/hc/en-us/community/posts/360031101592-Increase-max-file-size-for-free-accounts)~~ [25MB](https://twitter.com/discord/status/1645522780337885184) 🥳🎉.
 - media.discordapp.net & cdn.discordapp.com. [Click here for detail](https://www.reddit.com/r/discordapp/comments/e8lgj2/mediadiscordappnet_cdndiscordappcom/).
 - proxy_url. [Click here for detail](https://www.reddit.com/r/discordapp/comments/f1ixly/.discord_adding_lower_width_and_height_to_linked/).
 - How long my Discord file link will work? [Click here for detail](https://support.discord.com/hc/en-us/community/posts/360061593771-Privacy-for-CDN-attachements).
