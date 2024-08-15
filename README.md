@@ -11,6 +11,12 @@ Free unlimited file hosting 😁👍
 
 ---
 
+## Refresh Expired URL
+
+- https://github.com/animemoeus/backend/wiki/Discord#refresh-expired-url
+
+---
+
 ## Usage
 
 ```python
