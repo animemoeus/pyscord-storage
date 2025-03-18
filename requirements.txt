@@ -1,4 +1,4 @@
-certifi==2022.12.7 ; python_version >= "3.8" and python_version < "4"
+certifi==2025.1.31 ; python_version >= "3.8" and python_version < "4"
 charset-normalizer==3.1.0 ; python_version >= "3.8" and python_version < "4"
 idna==3.4 ; python_version >= "3.8" and python_version < "4"
 requests==2.28.2 ; python_version >= "3.8" and python_version < "4"
