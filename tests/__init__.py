@@ -11,7 +11,7 @@ class TestRequests(unittest.TestCase):
     def test_upload_from_url(self):
         response = pyscord_storage.upload_from_url(
             "takagi.png",
-            "https://cdn.discordapp.com/attachments/858938620425404426/1090196061177524234/takagi.png",
+            "https://github.com/animemoeus/pyscord-storage/blob/master/tests/temp/takagi.png",
         )
         self.assertEqual(response.get("status"), 200)
 
