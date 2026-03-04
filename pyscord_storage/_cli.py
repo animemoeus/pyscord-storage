@@ -1,21 +1,25 @@
 import typer
+from rich.console import Console
 
 from ._sync import upload_from_file, upload_from_url
 
 app = typer.Typer()
+console = Console(stderr=True)
 
 
 @app.command()
 def file(path: str = typer.Argument(..., help="Path to local file to upload")):
     """Upload a local file to Discord storage."""
-    result = upload_from_file(path)
+    with console.status(f"Uploading [bold]{path}[/bold]..."):
+        result = upload_from_file(path)
     _print_result(result)
 
 
 @app.command()
 def url(file_url: str = typer.Argument(..., help="Remote URL to upload")):
     """Upload a remote URL to Discord storage."""
-    result = upload_from_url(file_url)
+    with console.status(f"Uploading from [bold]{file_url}[/bold]..."):
+        result = upload_from_url(file_url)
     _print_result(result)
 
 
