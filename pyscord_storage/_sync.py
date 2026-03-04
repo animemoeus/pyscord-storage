@@ -5,12 +5,20 @@ USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTM
 HEADERS = {"User-Agent": USER_AGENT}
 
 
+def _parse_response(response) -> dict:
+    try:
+        data = response.json()
+    except Exception:
+        data = response.text
+    return {"status": response.status_code, "data": data}
+
+
 def upload_from_file(file: str) -> dict:
     with open(file, "rb") as f:
         response = httpx.post(API_URL, headers=HEADERS, files={"file": f}, follow_redirects=True)
-    return {"status": response.status_code, "data": response.json()}
+    return _parse_response(response)
 
 
 def upload_from_url(url: str) -> dict:
     response = httpx.post(API_URL, headers=HEADERS, files={"url": (None, url)}, follow_redirects=True)
-    return {"status": response.status_code, "data": response.json()}
+    return _parse_response(response)
