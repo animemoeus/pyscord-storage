@@ -65,13 +65,41 @@ pip install pyscord-storage
 
 ```bash
 # Upload a local file
-pyscord-storage --file path/to/your.file
+pyscord-storage file path/to/your.file
 
 # Upload from a remote URL
-pyscord-storage --url https://example.com/your.file
+pyscord-storage url https://example.com/your.file
 ```
 
 On success, it prints the URL. On failure, it prints the error to stderr and exits with code 1. Professional.
+
+
+## Docker
+
+For those who refuse to install Python locally and prefer shipping their problems inside a container:
+
+```bash
+# Build the image
+docker build -t pyscord-storage .
+
+# Upload a local file (mount the directory containing your file)
+docker run --rm -v $(pwd):/files pyscord-storage file /files/your.file
+
+# Upload from a remote URL (no mount needed)
+docker run --rm pyscord-storage url https://example.com/your.file
+```
+
+Or, if you're a Docker Compose loyalist and want the volume pre-wired:
+
+```bash
+# Place your files in a ./files directory, then:
+docker compose run --rm pyscord-storage file /files/your.file
+
+# Upload from a remote URL
+docker compose run --rm pyscord-storage url https://example.com/your.file
+```
+
+The `docker-compose.yml` mounts `./files` into `/files` inside the container. Put your files there. Or don't. It's fine.
 
 
 ## Async Support
