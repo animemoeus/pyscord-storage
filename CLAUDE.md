@@ -6,17 +6,21 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ```bash
 # Install dependencies
-poetry install
-# or: pip install -r requirements.txt
+uv sync
 
 # Run all tests
-python -m unittest
+uv run pytest
 
-# Run a single test method
-python -m unittest tests.TestPyscordStorage.test_upload_from_file
+# Run a single test
+uv run pytest tests/test_pyscord_storage.py::test_upload_from_file
+
+# Lint and format check
+uv run ruff check .
+uv run ruff format --check .
+
+# Install pre-commit hooks (once, locally)
+uv run pre-commit install
 ```
-
-There is no build, lint, or type-check step configured.
 
 ## Architecture
 
@@ -32,10 +36,10 @@ Both return `{"status": <http_status_code>, "data": <json_response>}`.
 
 A spoofed Chrome User-Agent header is set on all requests to avoid server-side rejection.
 
-### Tests: [tests/__init__.py](tests/__init__.py)
+### Tests: [tests/test_pyscord_storage.py](tests/test_pyscord_storage.py)
 
-Uses Python's `unittest` module. Tests run against the live external API (no mocking). A real PNG file at [tests/temp/takagi.png](tests/temp/takagi.png) is used for `test_upload_from_file`.
+Plain pytest-style test functions (not `unittest.TestCase`), run via `pytest-asyncio` in auto mode. Tests run against the live external API (no mocking). A real PNG file at [tests/temp/takagi.png](tests/temp/takagi.png) is used for `test_upload_from_file`.
 
 ### CI: [.github/workflows/python-app.yml](.github/workflows/python-app.yml)
 
-Runs `python -m unittest` on push/PR to master using Python 3.10.
+Runs `ruff check`, `ruff format --check`, and `pytest` via `uv` on push/PR to master, across Python 3.9–3.13.
