@@ -62,8 +62,10 @@ Both functions return a dict. You're not getting a proper SDK response object. T
 For those who prefer their existential dread served directly in the terminal:
 
 ```bash
-pip install pyscord-storage
+uv tool install pyscord-storage
 ```
+
+> If `pyscord-storage` still isn't found after installing, run `uv tool update-shell` and restart your shell — `uv tool install` shims aren't always on `$PATH` by default.
 
 ```bash
 # Upload a local file
