@@ -1,31 +1,44 @@
-[tool.poetry]
+[project]
 name = "pyscord-storage"
-version = "4.1.1"
+version = "4.1.2"
 description = "Free unlimited file hosting using the Discord server"
-license = "MIT"
-authors = ["Arter Tendean <arter.tendean.07@gmail.com>"]
 readme = "README.md"
-homepage = "https://discord-storage-serverless.animemoe.us/"
-repository = "https://github.com/animemoeus/pyscord-storage"
+license = "MIT"
+authors = [{ name = "Arter Tendean", email = "arter.tendean.07@gmail.com" }]
+requires-python = ">=3.9"
 keywords = ["discord", "unlimited", "storage", "django"]
-packages = [{include = "pyscord_storage"}]
+dependencies = [
+    "httpx>=0.24.0",
+    "typer>=0.9.0",
+]
 
-[tool.poetry.scripts]
+[project.urls]
+Homepage = "https://discord-storage-serverless.animemoe.us/"
+Repository = "https://github.com/animemoeus/pyscord-storage"
+
+[project.scripts]
 pyscord-storage = "pyscord_storage._cli:main"
 
-[tool.poetry.dependencies]
-python = "^3.8"
-httpx = ">=0.24.0"
-typer = ">=0.9.0"
-
-
-[tool.poetry.group.dev.dependencies]
-pytest = ">=7.0.0"
-pytest-asyncio = ">=0.21.0"
+[dependency-groups]
+dev = [
+    "pytest>=7.0.0",
+    "pytest-asyncio>=0.21.0",
+    "ruff>=0.8.0",
+    "pre-commit>=3.8.0",
+]
 
 [tool.pytest.ini_options]
 asyncio_mode = "auto"
 
+[tool.ruff]
+target-version = "py39"
+
+[tool.ruff.lint]
+select = ["E", "F"]
+
+[tool.ruff.lint.per-file-ignores]
+"pyscord_storage/__init__.py" = ["F403", "F405"]
+
 [build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
+requires = ["hatchling"]
+build-backend = "hatchling.build"

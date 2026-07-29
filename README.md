@@ -47,7 +47,9 @@ Or, if you're feeling extra chaotic, make the backend fetch a file from a URL fo
 ```python
 import pyscord_storage
 
-result = pyscord_storage.upload_from_url("waifu.jpg", "https://github.com/animemoeus/pyscord-storage/raw/master/tests/temp/takagi.png")
+result = pyscord_storage.upload_from_url(
+    "https://github.com/animemoeus/pyscord-storage/raw/master/tests/temp/takagi.png",
+)
 
 print(result)
 ```
@@ -65,10 +67,10 @@ pip install pyscord-storage
 
 ```bash
 # Upload a local file
-pyscord-storage --file path/to/your.file
+pyscord-storage file path/to/your.file
 
 # Upload from a remote URL
-pyscord-storage --url https://example.com/your.file
+pyscord-storage url https://example.com/your.file
 ```
 
 On success, it prints the URL. On failure, it prints the error to stderr and exits with code 1. Professional.
@@ -82,9 +84,11 @@ Yes, we also have async versions — because if you're going to do something rid
 import asyncio
 import pyscord_storage
 
+
 async def main():
     result = await pyscord_storage.async_upload_from_file("path/to/your.file")
     print(result)
+
 
 asyncio.run(main())
 ```
@@ -93,9 +97,13 @@ asyncio.run(main())
 import asyncio
 import pyscord_storage
 
+
 async def main():
-    result = await pyscord_storage.async_upload_from_url("waifu.jpg", "https://github.com/animemoeus/pyscord-storage/raw/master/tests/temp/takagi.png")
+    result = await pyscord_storage.async_upload_from_url(
+        "https://github.com/animemoeus/pyscord-storage/raw/master/tests/temp/takagi.png",
+    )
     print(result)
+
 
 asyncio.run(main())
 ```
@@ -116,6 +124,16 @@ Here's the part where I tell you that to get more storage out of a chat app, you
 - Boosting may push the limit to 50MB or 100MB. Allegedly.
 - [Discord Server Boosting FAQ](https://support.discord.com/hc/en-us/articles/360028038352-Server-Boosting-FAQ-)
 - Join our Discord Server (of course there's a Discord server): [https://discord.gg/kZuWeKzgkq](https://discord.gg/kZuWeKzgkq)
+
+
+## Development
+
+```bash
+uv sync
+uv run pytest
+uv run ruff check .
+uv run pre-commit install
+```
 
 
 ## Example Implementations
