@@ -1,0 +1,5 @@
+services:
+  pyscord-storage:
+    build: .
+    volumes:
+      - ./files:/files
